@@ -3,3 +3,13 @@
 env_vars*
 credentials*
 **/build/*
+
+# Entorno virtual y artefactos de Python
+.venv/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Datos: no se versionan en Git; se regeneran con scripts/data_acquisition/main.py
+data/**
+!data/README.md
